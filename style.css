@@ -203,3 +203,22 @@ p {
   margin: 0.625rem;
   color: blue;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .left_Side {
+    flex: 12;
+    width: 100%;
+  }
+  .right_Side {
+    flex: 12;
+    width: 100%;
+  }
+}
