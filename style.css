@@ -10,10 +10,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container {
+ .container {
   position: relative;
   width: 100%;
-  max-width: 75rem;
   background: #fff;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -206,19 +205,20 @@ p {
 
 @media only screen and (max-width: 600px) {
   body {
+    padding: 0;
     width: 100%;
-    display: flex;
-    position: relative;
   }
   .container {
-    grid-column: 3fr;
+    position: static;
+    width: 100%;
+    margin: 0;
+    
   }
   .left_Side {
-    flex: 12;
-    width: 100%;
+    
+   
   }
   .right_Side {
-    flex: 12;
-    width: 100%;
+    
   }
 }
