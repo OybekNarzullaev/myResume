@@ -8,7 +8,7 @@ body {
   position: relative;
   width: 100%;
   display: flex;
-  font-family: "consolas";
+  font-family: "HP Simplified";
 }
 .left_Side {
   flex: 4;
