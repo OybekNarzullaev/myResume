@@ -176,6 +176,11 @@ body {
   padding: 5px 0;
 }
 
+.interest ul li span a {
+  text-decoration: none;
+  color: darkcyan;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     flex-direction: column;
