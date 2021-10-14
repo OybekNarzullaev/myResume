@@ -45,8 +45,9 @@ body {
 }
 
 .contactInfo {
-  padding: 10px;
+  padding: 5px 10px;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .contactInfo .title {
@@ -76,19 +77,27 @@ body {
   color: white;
 }
 
+.education ul li {
+  padding: 5px 0;
+}
+
 .education h5 {
   color: aqua;
 }
+.education h5,
+.education h4 {
+  padding: 2px 0;
+}
 .education h4:last-child {
-  color: aqua;
+  color: #1e90ff;
 }
 .language {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   padding: 10px;
 }
 
 .language ul {
-  padding: 20px;
+  padding: 5px 20px;
 }
 .language ul li {
   list-style: none;
@@ -176,9 +185,65 @@ body {
   padding: 5px 0;
 }
 
-.interest ul li span a {
+.pr {
   text-decoration: none;
-  color: darkcyan;
+  color: blue;
+}
+
+.pr span {
+  color: green;
+}
+
+.ittech {
+  padding: 5px 0;
+  text-align: center;
+  color: blue;
+}
+
+/* galeriya */
+div.gallery {
+  border: 1px solid #ccc;
+  box-shadow: 5px 0 5px #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.responsive {
+  padding: 10px 20px;
+  width: 32%;
+}
+
+.pictures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.picblock {
+  display: flex;
+}
+
+.download {
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  text-decoration: none;
+}
+
+.download span {
+  font-size: 15px;
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -188,8 +253,25 @@ body {
   }
   .left_Side {
     width: 100%;
+    padding-bottom: 20px;
   }
   .right_Side {
+    width: 100%;
+  }
+  .picblock {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
     width: 100%;
   }
 }
