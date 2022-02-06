@@ -10,6 +10,29 @@ body {
   display: flex;
   font-family: "consolas";
 }
+
+/* Fix */
+
+.language ul li .percent {
+  border-radius: 20px 5px 5px 20px;
+}
+
+.fa:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+div.gallery img:hover,
+.download:hover {
+  transform: scale(1.04);
+}
+
+.download:active {
+  transform: scale(1.08);
+}
+
+/* /Fix */
+
 .left_Side {
   flex: 4;
   width: 100%;
